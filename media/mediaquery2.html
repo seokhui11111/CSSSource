@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background: white;
+        padding: 25px;
+        order: 2;
+      }
+      .flexbg .left {
+        background: #3498db;
+        padding: 25px;
+        order: 1;
+      }
+      .flexbg .right {
+        background: #34495e;
+        padding: 25px;
+        order: 3;
+      }
+
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100px;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
+          quaerat labore nulla voluptatem quos provident quo quasi earum aperiam
+          ipsa impedit reprehenderit illo similique iusto nobis ullam veniam
+          odio, aspernatur sint vero tempora, ducimus sapiente. Et doloribus
+          cumque, perferendis asperiores veniam sed esse expedita molestiae
+          illum. Doloremque a deleniti at optio assumenda iste! Velit porro nam
+          ex labore doloribus iure ipsum recusandae nulla facilis minima,
+          voluptatem reiciendis illum sint dolorem dolor tenetur earum quos
+          similique aperiam repellat? Iusto nisi culpa ipsam nulla expedita
+          voluptates, ipsa quod consectetur rem, a voluptate earum temporibus
+          amet corporis nam reprehenderit veniam fugit ut eos.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
+          quaerat labore nulla voluptatem quos provident quo quasi earum aperiam
+          ipsa impedit reprehenderit illo similique iusto nobis ullam veniam
+          odio, aspernatur sint vero tempora, ducimus sapiente. Et doloribus
+          cumque, perferendis asperiores veniam sed esse expedita molestiae
+          illum. Doloremque a deleniti at optio assumenda iste! Velit porro nam
+          ex labore doloribus iure ipsum recusandae nulla facilis minima,
+          voluptatem reiciendis illum sint dolorem dolor tenetur earum quos
+          similique aperiam repellat? Iusto nisi culpa ipsam nulla expedita
+          voluptates, ipsa quod consectetur rem, a voluptate earum temporibus
+          amet corporis nam reprehenderit veniam fugit ut eos.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quia
+        odio vero necessitatibus hic corporis consectetur quas mollitia eius
+        dicta itaque dignissimos illum inventore reiciendis, sed nisi
+        exercitationem, nam a?
+      </aside>
+      <aside class="sidebar right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+        quisquam. Eaque voluptatibus voluptatum rem suscipit est soluta,
+        temporibus sapiente. Dolorem, tempora quos. Quo ab earum voluptates
+        ipsam accusantium officiis quis.
+      </aside>
+    </div>
+  </body>
+</html>

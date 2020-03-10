@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .container {
+        border: 2px solid;
+        height: 400px;
+        display: flex;
+        /* justify-content: space-around; */
+        /* align-items : align-content값이 stretch 일떄 작동 */
+        align-items: baseline; /* stretch(기본값) */
+        flex-wrap: wrap; /* nowrap(기본값), wrap */
+      }
+      .container .box {
+        width: 200px;
+        height: 100px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container .box:first-child {
+        background: red;
+      }
+      .container .box:nth-child(2) {
+        background: blue;
+      }
+      .container .box:nth-child(3) {
+        background: green;
+        /* font-size: 40px; */
+      }
+      .container .box:nth-child(4) {
+        background: brown;
+      }
+      .container .box:nth-child(5) {
+        background: burlywood;
+      }
+      .container .box:nth-child(6) {
+        background: white;
+      }
+      .container .box:last-child {
+        background: yellow;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 수평으로 아이템 배치 : inline-block,float,flex -->
+    <div class="container">
+      <div class="box">flex-item1</div>
+      <div class="box">flex-item2</div>
+      <div class="box">flex-item3</div>
+      <div class="box">flex-item4</div>
+      <div class="box">flex-item5</div>
+      <div class="box">flex-item6</div>
+      <div class="box">flex-item7</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas beatae
+      aut dolorum id laudantium voluptates minima odit pariatur non neque magnam
+      alias aperiam ex sapiente exercitationem, itaque nam ullam.
+    </p>
+  </body>
+</html>

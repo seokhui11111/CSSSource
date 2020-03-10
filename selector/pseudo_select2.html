@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      /* h1태그 위에 마우스를 올리면 밑줄이 그어지도록 하기
+    box를 누르는 동안 box의 width와 색상이 변경되도록 하기
+    input 이 포커스를 받으면 배경 색상 변하게 만들기*/
+      h1:hover {
+        text-decoration: underline;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: lawngreen;
+        transition: 0.4s;
+      }
+      .box:active {
+        width: 200px;
+        color: red;
+      }
+      input {
+        width: 150px;
+        outline: none;
+        border: 1px solid lightgray;
+        padding: 5px 10px;
+        transition: 0.4s;
+      }
+      input:focus {
+        background-color: blue;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        가상(pseudo) 클래스 선택자
+        콜론 기호가 하나 들어감(:)
+        주로 a 태그랑 관련 있음
+        상태에 따라 선택 가능
+
+        :focus, :active, :hover, :link, :visited
+    -->
+    <h1>CSS 기본 문법</h1>
+    <div>
+      <input type="text" />
+    </div>
+    <div class="box"></div>
+  </body>
+</html>

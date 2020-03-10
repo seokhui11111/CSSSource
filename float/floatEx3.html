@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        width: 960px;
+        background: #ccc;
+        margin: auto;
+      }
+      .logo {
+        float: left;
+      }
+      .nav {
+        float: right;
+      }
+      .nav ul {
+        list-style: none;
+      }
+      .nav ul li {
+        display: inline-block;
+        margin-left: 20px;
+        line-height: 60px;
+      }
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="clearfix">
+      <div class="logo">
+        <h1><a href="#">Logo</a></h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Member Join</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Location</a></li>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>
